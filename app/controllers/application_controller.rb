@@ -24,8 +24,4 @@ class ApplicationController < ActionController::Base
       u.permit(:name, :email, :password, :password_confirmation)
     end
   end
-
-  def not_found
-    render 'errors/404'
-  end
 end
